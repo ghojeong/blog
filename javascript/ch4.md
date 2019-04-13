@@ -42,7 +42,7 @@ arr['3']과 arr[3]이 같은말
 **용어 정리**
 
 - `배열 리터럴(literal)`
-- - `인덱스(index)`: 키
+- `인덱스(index)`: 키
 - `배열 요소(item)`: 값
 
 주의점: <strong style="color:red">length가 배열의 길이를 뜻하지 않는다.</strong>(특히 delete 연산자를 사용했을 때)
