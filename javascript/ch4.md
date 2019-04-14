@@ -45,5 +45,8 @@ arr['3']과 arr[3]이 같은말
 - `인덱스(index)`: 키
 - `배열 요소(item)`: 값
 
-주의점: <strong style="color:red">length가 배열의 길이를 뜻하지 않는다.</strong>(특히 delete 연산자를 사용했을 때)
+주의점: <strong style="color:red">length가 배열의 길이를 뜻하지 않는다.</strong>(특히 delete 연산자를 사용할 때, delete 보다는 splice를 쓰자.)
 이런식으로 length 보다 작은 수의 배열 요소를 가진 배열을 `희소 배열(Sparsed Array)`이라고 한다.
+
+javascript 배열의 메모리 관리
+(https://developer.mozilla.org/ko/docs/Web/JavaScript/Memory_Management)
