@@ -50,3 +50,5 @@ arr['3']과 arr[3]이 같은말
 
 javascript 배열의 메모리 관리
 (https://developer.mozilla.org/ko/docs/Web/JavaScript/Memory_Management)
+
+***논의를 해보고 싶은 점: 언제 자바스크립트 객체를 쓰고, 언제 배열을 써야하는가?***
