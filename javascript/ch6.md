@@ -46,6 +46,10 @@ console.trace | 스택 트레이스 출력
 
 서식 문자열(%o, %d, %i, %s, %f)은 Node.js에서 지원되지 않는다.
 차라리 템플릿 리터럴을 쓰자(p.88)
+객체를 출력할때는 dir 강추!
+```JS
+console.dir(obj, { color: true, depth: 5 });
+```
 
 ## 6.3 이벤트 처리기, 타이머
 
