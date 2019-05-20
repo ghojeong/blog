@@ -31,7 +31,7 @@ function Card(suit, rank) {
     this.suite = suit;
     this.rank = rank;
 }
-var card = Object.create(object.prototype, {
+var card = Object.create(Object.prototype, {
     suit: {
         value: "하트",
         writable: true,
@@ -163,7 +163,7 @@ obj instance of F
 2 isPrototypeOf
 
 ```JS
-F.prototype.isPrototypeOf(Obj)
+F.prototype.isPrototypeOf(obj)
 ```
 
 ### 9.2.7 Object.prototype
