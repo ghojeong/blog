@@ -1,15 +1,23 @@
-package sort;
+package algo.sort.code;
 
-public class Selection {
+public class Insertion {
 
   public static char[] javaSort(char[] charArray) {
-    // TODO: 선택 정렬 구현
     java.util.Arrays.sort(charArray);
     return charArray;
   }
 
   public static char[] insertionSort(char[] charArray) {
-    java.util.Arrays.sort(charArray);
+    for (int i = 1; i < charArray.length; i++) {
+      char temp = charArray[i];
+      int i2 = i - 1;
+
+      while ((i2 >= 0) && charArray[i2] > temp) {
+        charArray[i2 + 1] = charArray[i2];
+        i2--;
+      }
+      charArray[i2 + 1] = temp;
+    }
     return charArray;
   }
 

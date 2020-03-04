@@ -18,11 +18,11 @@
 cd ./algo/sort
 
 // 자바 컴파일
-javac -d ./sort/classes ./sort/**/*.java
+javac -d ./classes ./code/**/*.java
 
 // 컴파일된 class 실행
-java -cp ./sort/classes ${packageName}.${className}
+java -cp ./classes algo.sort.code.${className}
 
 // 컴파일된 class 삭제
-rm -rf ./sort/classes
+rm -rf ./classes
 ```
