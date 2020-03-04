@@ -1,2 +1,3 @@
 # blog
-personal blog which contains everyday information about Gho Jeong-Wan
+
+공부한 내용을 정리한 블로그
