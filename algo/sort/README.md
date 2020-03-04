@@ -11,3 +11,18 @@
 | Selection(선택) |  `n^2`   |  `n^2`   |  `n^2`   |    `1` |     no |
 
 ![compare](./img/compare.png)
+
+## Command
+
+```sh
+cd ./algo/sort
+
+// 자바 컴파일
+javac -d ./sort/classes ./sort/**/*.java
+
+// 컴파일된 class 실행
+java -cp ./sort/classes ${packageName}.${className}
+
+// 컴파일된 class 삭제
+rm -rf ./sort/classes
+```
