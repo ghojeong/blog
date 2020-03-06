@@ -3,12 +3,12 @@ package algo.sort.code;
 public class Bubble {
 
   public static char[] javaSort(char[] charArray) {
-    // TODO: 버블 정렬 구현
     java.util.Arrays.sort(charArray);
     return charArray;
   }
 
   public static char[] insertionSort(char[] charArray) {
+    // TODO: 버블 정렬 구현
     java.util.Arrays.sort(charArray);
     return charArray;
   }

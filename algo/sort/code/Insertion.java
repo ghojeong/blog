@@ -8,6 +8,7 @@ public class Insertion {
   }
 
   public static char[] insertionSort(char[] charArray) {
+    // TODO: 삽입 정렬 구현
     for (int i = 1; i < charArray.length; i++) {
       char temp = charArray[i];
       int i2 = i - 1;

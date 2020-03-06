@@ -3,12 +3,12 @@ package algo.sort.code;
 public class Quick {
 
   public static char[] javaSort(char[] charArray) {
-    // TODO: 퀵 정렬 구현
     java.util.Arrays.sort(charArray);
     return charArray;
   }
 
   public static char[] insertionSort(char[] charArray) {
+    // TODO: 퀵 정렬 구현
     java.util.Arrays.sort(charArray);
     return charArray;
   }
