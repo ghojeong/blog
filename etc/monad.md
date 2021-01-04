@@ -19,11 +19,32 @@
 
 그리고 Monad 에서 말하는 모노이달 카테고리란, Monoid 의 3가지 규칙을 만족하는 이항연산을 가진 카테고리를 말한다.
 
-굳이 집합이 아닌 카테고리라고 말하는 이유는, 구체적인 data value 의 변환(function)이 아닌, data type 의 morphism(functor) 를 살펴보기에는 Set Theory 가 아니라 Category Theory 를 활용하는게 더 적합하기 때문이다.
+굳이 집합이 아닌 카테고리라고 말하는 이유는, 구체적인 data value 의 map(function)이 아닌, data type 의 map(functor) 를 살펴보기에는 Set Theory 가 아니라 Category Theory 를 활용하는게 더 적합하기 때문이다.
 
-Set Theory 에서의 Morphism 이 Function이고, Category Theory 에서의 Morphism 이 Functor 이다.
+Set Theory 에서의 Morphism 이 Function이고,
+~~Category Theory 에서의 Morphism 이 Functor 이다.~~
+
+완전히 잘못된 생각이다. Category Theory 에서의 Morphism 은 Functor가 아니다.
+
+morphism은 한 category 안에 있는 object끼리의 mapping 이다.
+
+반면, **functor는 category에서 category로 가는 mapping이다.**
+
+![functor](./img/functor.jpeg)
+
+즉 functor 는 카테고리에 있는 object 와 이항연산(morphism) 그리고 morphism 끼리의 합성도 전부 functor 를 통해 mapping 이 되어야 한다.
+
 
 [Set Theory 와 Category Theory 의 관점 차이](https://cs.stackexchange.com/questions/91357/what-exactly-is-the-semantic-difference-between-category-and-set)
+
+정택의 functor 예시
+```txt
+카테고리 C의 object가 정수이고,
+카테고리 D의 object들이 2^x(x는 정수)집합이 될 때,
+C->D로 가는 functor는 object x를 obect 2^x로 mapping하고
+C의 morhism은 x를 x+1로 보내는 연산이라고 했을 때, 이 연산들을 합성해서 만들어지는 연산들은 모두 x->x+n 형태.
+그럼 D에서는 이 연산을 2^n을 곱하는 연산(2^x->2^(x+n))으로 mapping하면 됨.
+```
 
 ![flatmap](./img/flatmap.png)
 
