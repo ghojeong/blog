@@ -1,7 +1,20 @@
 # 모나드
 
-- 임정택과 논의하며, 모나드에 관해 알게된 내용을 정리한다.
+- 모나드에 관해 알게된 내용을 정리한다.
 - 참고: [도넛의 함수형 프로그래밍](https://youtu.be/ii5hnSCE6No)
+
+## JK 의 설명
+
+- [Category Theory YouTube](https://www.youtube.com/watch?v=I8LbkfSSR58&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_&index=1)
+- [Category Theory in Life](https://www.youtube.com/watch?v=ho7oagHeqNc)
+- 범주론에서 FP로 영향을 주었지만 100% 동일하지는 않다 (어차피 수학세계과 프로그래밍 세계는 비슷한 점도 있지만 다른점이 많죠)
+- 범주론에서 카테고리는 프로그래밍 세계에서 타입과 매칭되고, functor는 mapping 가능한 타입들(부류)가 된다
+- functor는 항등원과 결합법칙에 의해서 변형(transform)될 수 있다
+- 범주론에서 Monad는 endo-functor라는 변형이후 다시 자신의 범주가 되는 functor를 의미하는데, 프로그래밍 세계에서는 결국 자기 자신의 타입으로 mapping 되는 타입을 의미한다
+- monadic한 타입을 구현하기 위해서 언어마다 접근방식은 다르다.
+- monadic한 타입들이 필요한 이유는 순수함수로만 작성하는 FP세상에서, 가변적인 동작들 - 주로 파일이나 네트워크처럼 I/O 처럼 실패할 가능성이 있는 데이터를 별도 타입으로 감싸게 되고 mapping해서 사용하게 되더군요.
+
+![category2programming](./img/category2programming.png)
 
 ## 모나드란?
 
